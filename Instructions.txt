@@ -1,0 +1,63 @@
+---Instructions---
+
+1.- Select the .xlsx file that will be read. It has to have the correct format.
+2.- Select the destination folder.
+3.- Select the "No spaces" button if you want no spaces between paragraphs.
+4.- Select the "To PDF" button if you want to convert the .docx format to a .pdf file too.
+5.- Wait for the application to work. The window will freeze and won't accept any output. After a while, a message window will appear showing that the process has ended. You may continue to convert CV's or close the application. 
+
+---Excel format---
+
+To correctly use the given format for CV creation in an Excel sheet, follow these instructions:
+
+Sheet Layout:
+Column A, Section: Describes the specific section of the CV. It won't affect the reading of the file if the cells are erased or changed.
+Column B, Code: Defines the hierarchical position and subcategories within a section.
+Column C, Included: Input 1 if the section is to be included in the CV, or 0 if it should be omitted.
+Column D, Information: The information to be written in the CV file according to section.
+
+Steps:
+Fill Column B: Follow the hierarchical codes as listed in the example. For subsections, continue using the subcodes. If the codes or subcodes are different, the program won't read them. Please try to write the codes in sequential order. Despite this, the program will read them, but unexpected results may arise. Here's the legend:
+
+1.0: Name
+2.1: Residence
+2.2: e-mail
+2.3: Cellphone number
+2.4: Web Page
+3.0: Professional Statement
+4.1: University
+4.2: Degree
+4.3: Key Accomplishments
+4.4: Graduation Date
+4.5: Relevant Coursework
+5.1: Professional Experience
+5.2: Role
+5.3: Location
+5.4: Starting Date
+5.5: End Date
+5.6: Description and Accomplishments
+6.0: Publications and Presentations
+7.1: Certifications Group
+7.2: Certification
+8.1: Technical Tools
+8.2: Programming Skills
+8.3: Languages
+8.4: Soft Skills
+8.5: Lab Skills
+9.0: Honors and Awards
+10.1: Extracurricular Activities and Leadership Experience
+10.2: Hobbies
+11.0: Professional Affiliations
+12.0: References
+
+Fill Column C: Input 1 if you want this section or subsection to appear in the final CV. Input 0 if this section should be omitted.
+Fill Column D: Write the appropiate information for each section and subsection. You can fill this cells even if the corresponding
+value on columnc C is zero.
+
+---Notes---
+
+Ensure there are no empty rows between sections.
+Only input 1 or 0 in the "Included" column. Else, the program won't consider the row or may halt.
+For professional experience, if there are multiple roles, repeat the structure for each new role, including all subsections.
+The program may read the codes as 1.0 or 1 in the given case.
+With hobbies, ensure that only the first one is capitalized.
