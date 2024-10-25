@@ -1,4 +1,4 @@
-from Dict_functions_01 import *
+from functions import *
 from docx import Document
 from docx.shared import Cm
 from docx2pdf import convert
