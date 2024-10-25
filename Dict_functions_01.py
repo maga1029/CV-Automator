@@ -14,7 +14,6 @@ def fun_name(f_name_value, f_name_doc):
     run_two = paragraph_two.add_run("_" * 100)
     run_two.bold = True
     paragraph_two.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    print(f"Name: {f_name_value}")
 
 
 def fun_two(f_list_two, f_two_doc):
@@ -38,7 +37,6 @@ def fun_two(f_list_two, f_two_doc):
     font.name = "Calibri"
     font.size = Pt(11)
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    print(string_two)
 
 
 def fun_three(f_list_three, f_three_doc):
@@ -143,10 +141,6 @@ def fun_four(f_list_four, f_four_doc):
             font_four.size = Pt(11)
             paragraph_four.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
-        print(string_four_one)
-        print(string_four_two)
-        print(string_four_three)
-
 
 def fun_five(f_list_five, f_five_doc):
     string_five_one = ""
@@ -179,7 +173,6 @@ def fun_five(f_list_five, f_five_doc):
                 string_five_one += f"{f_list_five[_][2]}"
             if f_list_five[_][1] == 5.6:
                 if string_five_one != "":
-                    print(string_five_one)
                     paragraph_two = f_five_doc.add_paragraph()
                     run_two = paragraph_two.add_run(string_five_one)
                     run_two.bold = True
@@ -189,7 +182,6 @@ def fun_five(f_list_five, f_five_doc):
                     paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
                     string_five_one = ""
                 string_five_two += f_list_five[_][2]
-                print(string_five_two)
                 paragraph_three = f_five_doc.add_paragraph(style="ListBullet")
                 run_three = paragraph_three.add_run(string_five_two)
                 run_three.bold = False
@@ -199,7 +191,6 @@ def fun_five(f_list_five, f_five_doc):
                 paragraph_three.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
                 string_five_two = ""
         if string_five_one != "":
-            print(string_five_one)
             paragraph_two = f_five_doc.add_paragraph()
             run_two = paragraph_two.add_run(string_five_one)
             run_two.bold = True
@@ -210,7 +201,6 @@ def fun_five(f_list_five, f_five_doc):
 
 
 def fun_six(f_list_six, f_six_doc):
-    print(f_list_six)
     if f_list_six:
         paragraph_one = f_six_doc.add_paragraph()
         run_one = paragraph_one.add_run("Publications and Presentations")
@@ -228,7 +218,6 @@ def fun_six(f_list_six, f_six_doc):
             font_two.name = "Calibri"
             font_two.size = Pt(11)
             paragraph_two.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            print(string_six_one)
 
 
 def fun_seven(f_list_seven, f_seven_doc):
@@ -257,8 +246,6 @@ def fun_seven(f_list_seven, f_seven_doc):
                     font_two_two.name = "Calibri"
                     font_two_two.size = Pt(11)
                     paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                    print(string_seven_one)
-                    print(string_seven_two)
                     string_seven_two = ""
                 string_seven_one = f"{f_list_seven[_][2]}: "
             if f_list_seven[_][1] == 7.2:
@@ -282,8 +269,6 @@ def fun_seven(f_list_seven, f_seven_doc):
         font_two_two.name = "Calibri"
         font_two_two.size = Pt(11)
         paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        print(string_seven_one)
-        print(string_seven_two)
 
 
 def fun_eight(f_list_eight, f_eight_doc):
@@ -343,7 +328,6 @@ def fun_eight(f_list_eight, f_eight_doc):
                 except IndexError:
                     string_8_5_2 += f"{f_list_eight[_][2]}."
                     continue
-        print(string_8_1_2, string_8_2_2, string_8_3_2, string_8_4_2, string_8_5_2)
         for _ in range(len(f_list_eight)):
             if f_list_eight[_][1] == 8.1 and flag_1:
                 string_8_1_1 = "Technical Tools: "
@@ -440,7 +424,6 @@ def fun_nine(f_list_nine, f_nine_doc):
             font_two.name = "Calibri"
             font_two.size = Pt(11)
             paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            print(string_nine_one)
 
 
 def fun_ten(f_list_ten, f_ten_doc):
@@ -463,7 +446,6 @@ def fun_ten(f_list_ten, f_ten_doc):
                 font_two.name = "Calibri"
                 font_two.size = Pt(11)
                 paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                print(string_ten_one)
             if f_list_ten[_][1] == 10.2:
                 try:
                     if f_list_ten[_+1][1] == 10.2:
@@ -473,7 +455,6 @@ def fun_ten(f_list_ten, f_ten_doc):
                 except IndexError:
                     string_10_2 += f"{f_list_ten[_][2]}."
                     continue
-        print(string_10_2)
         if string_10_2:
             paragraph_three = f_ten_doc.add_paragraph()
             run_3_1 = paragraph_three.add_run("Hobbies: ")
@@ -507,7 +488,6 @@ def fun_eleven(f_list_eleven, f_eleven_doc):
             font_two.name = "Calibri"
             font_two.size = Pt(11)
             paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            print(string_eleven_one)
 
 
 def fun_twelve(f_list_twelve, f_twelve_doc):
@@ -528,7 +508,6 @@ def fun_twelve(f_list_twelve, f_twelve_doc):
             font_two.name = "Calibri"
             font_two.size = Pt(11)
             paragraph_two.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            print(string_twelve_one)
 
 
 if __name__ == "__main__":
