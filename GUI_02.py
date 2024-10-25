@@ -6,7 +6,7 @@ import re
 import tkinter.filedialog
 
 lista_btn = []
-lista_directions = ["", "", ""]  # Archivo excel, carpeta destino, nombre final word
+lista_directions = ["", "", ""]
 font_ttk = ("Comic Sans", 12)
 
 with open("Instructions.txt", "r") as file:
