@@ -21,7 +21,7 @@ def fun_instructions():
     root.protocol("WM_DELETE_WINDOW", lambda: None)
     win_instructions = Window(themename="sandstone")
     win_instructions.title("Instructions")
-    win_instructions.geometry("915x695")  # wxh
+    win_instructions.geometry("915x695")
     text_widget = scrolledtext.ScrolledText(win_instructions, wrap="word", height=30, font=("Comic Sans", 12))
     text_widget.insert(tkinter.END, instructions_text)
     text_widget.grid(row=0, column=0)
