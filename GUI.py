@@ -1,6 +1,6 @@
 from ttkbootstrap import *
 from tkinter import messagebox, scrolledtext
-from Writing_01 import fun_write_word, fun_read_excel
+from writing import fun_write_word, fun_read_excel
 import os
 import re
 import tkinter.filedialog
