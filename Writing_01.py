@@ -102,4 +102,4 @@ def fun_write_word(f2_file_word, f2_list_fields, f2_file_pdf, no_space, to_pdf):
 
 if __name__ == "__main__":
     fun_write_word(file_word, fun_read_excel(file_excel), file_pdf, 1, 1)
-    print("Finished")
+    messagebox.showinfo(title="Finished", message="Process finished")
